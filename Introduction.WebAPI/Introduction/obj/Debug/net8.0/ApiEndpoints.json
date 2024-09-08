@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "PostFish",
+    "RelativePath": "fishes/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fish",
+        "Type": "Introduction.Fish",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "GetFish",
+    "RelativePath": "fishes/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "GetAllFishes",
+    "RelativePath": "fishes/get/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "DeleteFish",
+    "RelativePath": "fishes/remove/id/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "DeleteFish",
+    "RelativePath": "fishes/remove/name/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
