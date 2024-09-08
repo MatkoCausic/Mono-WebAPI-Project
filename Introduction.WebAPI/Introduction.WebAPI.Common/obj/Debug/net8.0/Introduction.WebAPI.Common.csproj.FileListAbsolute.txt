@@ -1,0 +1,13 @@
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\bin\Debug\net8.0\Introduction.WebAPI.Common.deps.json
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\bin\Debug\net8.0\Introduction.WebAPI.Common.dll
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\bin\Debug\net8.0\Introduction.WebAPI.Common.pdb
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.sourcelink.json
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.dll
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\refint\Introduction.WebAPI.Common.dll
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\Introduction.WebAPI.Common.pdb
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.WebAPI.Common\obj\Debug\net8.0\ref\Introduction.WebAPI.Common.dll

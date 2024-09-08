@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vUhh+Di1sSU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

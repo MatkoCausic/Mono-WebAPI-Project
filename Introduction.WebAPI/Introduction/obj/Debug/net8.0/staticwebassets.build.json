@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "Dfv8z663HNKcev5kOO5dI3e0RxbAaqQm4vgwA2668tE=",
-  "Source": "Introduction",
-  "BasePath": "_content/Introduction",
+  "Hash": "YYkzIC+hb+jzmCNRqHejRuqTZX86Wz+b1ku0Scqggco=",
+  "Source": "Introduction.WebAPI",
+  "BasePath": "_content/Introduction.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
