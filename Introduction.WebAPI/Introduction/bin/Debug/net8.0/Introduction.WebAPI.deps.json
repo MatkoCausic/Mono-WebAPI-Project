@@ -109,11 +109,23 @@
       "Introduction.Service/1.0.0": {
         "dependencies": {
           "Introduction.Repository": "1.0.0",
+          "Introduction.Service.Common": "1.0.0",
           "Models": "1.0.0",
           "Npgsql": "8.0.3"
         },
         "runtime": {
           "Introduction.Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Introduction.Service.Common/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "Introduction.Service.Common.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -212,6 +224,11 @@
       "sha512": ""
     },
     "Introduction.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Introduction.Service.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

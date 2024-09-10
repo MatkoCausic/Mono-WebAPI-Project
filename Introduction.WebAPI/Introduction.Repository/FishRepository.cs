@@ -9,7 +9,39 @@ namespace Introduction.Repository
     {
         private static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=00000";
 
-        public List<Fish> GetAllFishes()
+        public async Task<Fish> GetFishAsync(Guid id)
+        {
+            try
+            {
+                Fish fish = new Fish();
+                using var connection = new NpgsqlConnection(connectionString);
+                var commandText = "SELECT * FROM \"Fish\" WHERE \"Id\" = @id;";
+                using var command = new NpgsqlCommand(commandText, connection);
+
+                command.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+
+                    fish.Id = Guid.Parse(reader[0].ToString());
+                    fish.Name = reader[1].ToString();
+                    fish.Color = reader[2].ToString();
+                    fish.IsAggressive = Convert.ToBoolean(reader[3]);
+                    fish.AquariumId = Guid.TryParse(reader[4].ToString(), out var result) ? result : null;
+                }
+                connection.Close();
+                return fish;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async Task<List<Fish>> GetAllFishesAsync()
         {
             try
             {
@@ -19,11 +51,11 @@ namespace Introduction.Repository
                 using var command = new NpgsqlCommand(commandText, connection);
 
                 connection.Open();
-                using NpgsqlDataReader reader = command.ExecuteReader();
+                using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
 
                 while (reader.Read())
                 {
-                    Fish fish = new Fish()
+                    Fish fish = new()
                     {
                         Id = Guid.Parse(reader[0].ToString()),
                         Name = reader[1].ToString(),
@@ -43,7 +75,7 @@ namespace Introduction.Repository
             }
 
         }
-        public bool PostFish(Fish fish)
+        public async Task<bool> PostFishAsync(Fish fish)
         {
             try
             {
@@ -58,7 +90,7 @@ namespace Introduction.Repository
                 command.Parameters.AddWithValue("@AquariumId", NpgsqlTypes.NpgsqlDbType.Uuid, fish.AquariumId ?? (object)DBNull.Value);
 
                 connection.Open();
-                int numberOfCommits = command.ExecuteNonQuery();
+                int numberOfCommits = await command.ExecuteNonQueryAsync();
                 connection.Close();
 
                 return numberOfCommits != 0;
@@ -68,7 +100,7 @@ namespace Introduction.Repository
                 throw new Exception(ex.Message);
             }
         }
-        public bool DeleteFish(string name)
+        public async Task<bool> DeleteFishAsync(string name)
         {
             try
             {
@@ -79,7 +111,7 @@ namespace Introduction.Repository
                 command.Parameters.AddWithValue("@name", name);
 
                 connection.Open();
-                int numberOfCommits = command.ExecuteNonQuery();
+                int numberOfCommits = await command.ExecuteNonQueryAsync();
                 connection.Close();
 
                 return numberOfCommits != 0;
@@ -90,7 +122,7 @@ namespace Introduction.Repository
                 throw new Exception(ex.Message);
             }
         }
-        public bool DeleteFish(Guid id)
+        public async Task<bool> DeleteFishAsync(Guid id)
         {
             try
             {
@@ -101,7 +133,7 @@ namespace Introduction.Repository
                 command.Parameters.AddWithValue("@id", id);
 
                 connection.Open();
-                int numberOfCommits = command.ExecuteNonQuery();
+                int numberOfCommits = await command.ExecuteNonQueryAsync();
                 connection.Close();
 
                 return numberOfCommits != 0;
@@ -112,33 +144,23 @@ namespace Introduction.Repository
                 throw new Exception(ex.Message);
             }
         }
-        public Fish GetFish(Guid id)
+        public async Task<bool> DomesticateFishAsync(string name)
         {
             try
             {
-                Fish fish = new Fish();
                 using var connection = new NpgsqlConnection(connectionString);
-                var commandText = "SELECT * FROM \"Fish\" WHERE \"Id\" = @id;";
+                var commandText = "UPDATE \"Fish\" SET \"IsAggressive\" = false WHERE \"Name\" = @name;";
                 using var command = new NpgsqlCommand(commandText, connection);
 
-                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@name", name);
+
                 connection.Open();
-                using NpgsqlDataReader reader = command.ExecuteReader();
-
-                if (reader.HasRows)
-                {
-                    reader.Read();
-
-                    fish.Id = Guid.Parse(reader[0].ToString());
-                    fish.Name = reader[1].ToString();
-                    fish.Color = reader[2].ToString();
-                    fish.IsAggressive = Convert.ToBoolean(reader[3]);
-                    fish.AquariumId = Guid.TryParse(reader[4].ToString(), out var result) ? result : null;
-                }
+                int numberOfCommits = await command.ExecuteNonQueryAsync();
                 connection.Close();
-                return fish;
+
+                return numberOfCommits != 0;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }

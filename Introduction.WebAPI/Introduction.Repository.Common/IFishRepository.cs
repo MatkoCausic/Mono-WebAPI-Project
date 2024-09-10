@@ -8,7 +8,11 @@ namespace Introduction.Repository.Common
 {
     public interface IFishRepository
     {
-        bool PostFish(Fish fish);
-        List<Fish> GetAllFishes();
+        Task<List<Fish>> GetAllFishesAsync();
+        Task<bool> PostFishAsync(Fish fish);
+        Task<bool> DeleteFishAsync(string name);
+        Task<bool> DeleteFishAsync(Guid id);
+        Task<Fish> GetFishAsync(Guid id);
+        Task<bool> DomesticateFishAsync(string name);
     }
 }

@@ -8,10 +8,11 @@ namespace Introduction.Service.Common
 {
     public interface IFishService
     {
-        List<Fish> GetAllFishes();
-        bool PostFish(Fish fish);
-        bool DeleteFish(string name);
-        bool DeleteFish(Guid id);
-        Fish GetFish(Guid id);
+        Task<List<Fish>> GetAllFishesAsync();
+        Task<bool> PostFishAsync(Fish fish);
+        Task<bool> DeleteFishAsync(string name);
+        Task<bool> DeleteFishAsync(Guid id);
+        Task<Fish> GetFishAsync(Guid id);
+        Task<bool> DomesticateFishAsync(string name);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Introduction.Repository;
 using Introduction.Service.Common;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,31 +11,36 @@ namespace Introduction.Service
 {
     public class FishService : IFishService
     {
-        public List<Fish> GetAllFishes()
+        public async Task<List<Fish>> GetAllFishesAsync()
         {
             FishRepository repository = new();
-            return repository.GetAllFishes();
+            return await repository.GetAllFishesAsync();
         }
-        public bool PostFish(Fish fish)
+        public async Task<bool> PostFishAsync(Fish fish)
         {
             FishRepository repository = new();
-            return repository.PostFish(fish);
+            return await repository.PostFishAsync(fish);
         }
-        public bool DeleteFish(string name)
+        public async Task<bool> DeleteFishAsync(string name)
         {
             FishRepository repository= new();
-            return repository.DeleteFish(name);
+            return await repository.DeleteFishAsync(name);
         }
 
-        public bool DeleteFish(Guid id)
-        {
-            FishRepository repository= new();
-            return repository.DeleteFish(id);
-        }
-        public Fish GetFish(Guid id)
+        public async Task<bool> DeleteFishAsync(Guid id)
         {
             FishRepository repository = new();
-            return repository.GetFish(id);
+            return await repository.DeleteFishAsync(id);
+        }
+        public async Task<bool> DomesticateFishAsync(string name)
+        {
+            FishRepository repository = new();
+            return await repository.DomesticateFishAsync(name);
+        }
+        public async Task<Fish> GetFishAsync(Guid id)
+        {
+            FishRepository repository = new();
+            return await repository.GetFishAsync(id);
         }
     }
 }

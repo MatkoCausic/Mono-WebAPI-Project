@@ -11,14 +11,12 @@ namespace Introduction.Controllers
     [Route("fishes")]
     public class FishController : Controller
     {
-        static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=00000";
-
         [HttpDelete]
-        [Route("remove/id/{id}")]
-        public IActionResult DeleteFish(Guid id)
+        [Route("remove/{id}")]
+        public async Task<IActionResult> DeleteFishAsync(Guid id)
         {
             FishService service = new();
-            bool isSuccessful = service.DeleteFish(id);
+            bool isSuccessful = await service.DeleteFishAsync(id);
             if (!isSuccessful)
                 return BadRequest("Unable to find/delete fish with given id.");
             return Ok("Successfully deleted!");
@@ -26,10 +24,10 @@ namespace Introduction.Controllers
 
         [HttpDelete]
         [Route("remove/name/{name}")]
-        public IActionResult DeleteFish(string name)
+        public async Task<IActionResult> DeleteFishAsync(string name)
         {
             FishService service = new();
-            bool isSuccessful = service.DeleteFish(name);
+            bool isSuccessful = await service.DeleteFishAsync(name);
             if (!isSuccessful)
                 return BadRequest("Unable to find/delete fish with given name.");
             return Ok("Successfully deleted!");
@@ -37,10 +35,10 @@ namespace Introduction.Controllers
 
         [HttpPost]
         [Route("add")]
-        public IActionResult PostFish([FromBody] Fish fish)
+        public async Task<IActionResult> PostFishAsync([FromBody] Fish fish)
         {
             FishService service = new();
-            bool isSuccessful = service.PostFish(fish);
+            bool isSuccessful = await service.PostFishAsync(fish);
             if (!isSuccessful)
                 return BadRequest("Unable to add fish to the database.");
             return Ok("Successfully added!");
@@ -48,21 +46,32 @@ namespace Introduction.Controllers
 
         [HttpGet]
         [Route("get/all")]
-        public IActionResult GetAllFishes()
+        public async Task<IActionResult> GetAllFishesAsync()
         {
             FishService service = new();
-            var isSuccessful = service.GetAllFishes();
+            var isSuccessful = await service.GetAllFishesAsync();
             if(isSuccessful == null)
                 return NotFound("There are no entities in table.");
             return Ok(isSuccessful);
         }
 
-        [HttpGet]
-        [Route("get/{id}")]
-        public IActionResult GetFish(Guid id)
+        [HttpPut]
+        [Route("domesticate/name/{name}")]
+        public async Task<IActionResult> DomesticateFishAsync(string name)
         {
             FishService service = new();
-            var isSuccessful = service.GetFish(id);
+            var isSuccessul = await service.DomesticateFishAsync(name);
+            if (isSuccessul == null)
+                return NotFound("There are no entities with such name.");
+            return Ok("Fish successfully domesticated!");
+        }
+
+        [HttpGet]
+        [Route("get/{id}")]
+        public async Task<IActionResult> GetFishAsync(Guid id)
+        {
+            FishService service = new();
+            var isSuccessful = await service.GetFishAsync(id);
             if (isSuccessful == null)
                 return NotFound("There is no such entity.");
             return Ok(isSuccessful);

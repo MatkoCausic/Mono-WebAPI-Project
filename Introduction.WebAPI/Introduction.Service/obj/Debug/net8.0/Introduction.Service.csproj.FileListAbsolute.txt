@@ -18,3 +18,5 @@ C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Serv
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Service\obj\Debug\net8.0\refint\Introduction.Service.dll
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Service\obj\Debug\net8.0\Introduction.Service.pdb
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Service\obj\Debug\net8.0\ref\Introduction.Service.dll
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Service\bin\Debug\net8.0\Introduction.Service.Common.dll
+C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Service\bin\Debug\net8.0\Introduction.Service.Common.pdb

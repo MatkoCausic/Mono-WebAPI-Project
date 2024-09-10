@@ -1,7 +1,17 @@
 [
   {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "GetAllAquariumsAsync",
+    "RelativePath": "aquariums/get/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Introduction.Controllers.FishController",
-    "Method": "PostFish",
+    "Method": "PostFishAsync",
     "RelativePath": "fishes/add",
     "HttpMethod": "POST",
     "IsController": true,
@@ -17,7 +27,23 @@
   },
   {
     "ContainingType": "Introduction.Controllers.FishController",
-    "Method": "GetFish",
+    "Method": "DomesticateFishAsync",
+    "RelativePath": "fishes/domesticate/name/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "GetFishAsync",
     "RelativePath": "fishes/get/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -33,7 +59,7 @@
   },
   {
     "ContainingType": "Introduction.Controllers.FishController",
-    "Method": "GetAllFishes",
+    "Method": "GetAllFishesAsync",
     "RelativePath": "fishes/get/all",
     "HttpMethod": "GET",
     "IsController": true,
@@ -43,8 +69,8 @@
   },
   {
     "ContainingType": "Introduction.Controllers.FishController",
-    "Method": "DeleteFish",
-    "RelativePath": "fishes/remove/id/{id}",
+    "Method": "DeleteFishAsync",
+    "RelativePath": "fishes/remove/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -59,7 +85,7 @@
   },
   {
     "ContainingType": "Introduction.Controllers.FishController",
-    "Method": "DeleteFish",
+    "Method": "DeleteFishAsync",
     "RelativePath": "fishes/remove/name/{name}",
     "HttpMethod": "DELETE",
     "IsController": true,
