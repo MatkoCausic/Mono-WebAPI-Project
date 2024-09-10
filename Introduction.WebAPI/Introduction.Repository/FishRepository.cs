@@ -55,7 +55,7 @@ namespace Introduction.Repository
 
                 while (reader.Read())
                 {
-                    Fish fish = new Fish()
+                    Fish fish = new()
                     {
                         Id = Guid.Parse(reader[0].ToString()),
                         Name = reader[1].ToString(),

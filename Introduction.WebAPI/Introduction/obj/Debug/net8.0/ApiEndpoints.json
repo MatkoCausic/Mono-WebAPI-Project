@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "GetAllAquariumsAsync",
+    "RelativePath": "aquariums/get/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Introduction.Controllers.FishController",
     "Method": "PostFishAsync",
     "RelativePath": "fishes/add",
@@ -60,7 +70,7 @@
   {
     "ContainingType": "Introduction.Controllers.FishController",
     "Method": "DeleteFishAsync",
-    "RelativePath": "fishes/remove/id/{id}",
+    "RelativePath": "fishes/remove/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

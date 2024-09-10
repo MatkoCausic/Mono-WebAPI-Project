@@ -11,10 +11,8 @@ namespace Introduction.Controllers
     [Route("fishes")]
     public class FishController : Controller
     {
-        static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=00000";
-
         [HttpDelete]
-        [Route("remove/id/{id}")]
+        [Route("remove/{id}")]
         public async Task<IActionResult> DeleteFishAsync(Guid id)
         {
             FishService service = new();

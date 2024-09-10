@@ -5,7 +5,7 @@
         public Guid Id { get; set; }
         public string? OwnerName { get; set; }
         public string? Shape { get; set; }
-        public bool IsHandmande { get; set; }
+        public bool IsHandmade { get; set; }
         public double? Volume { get; set; }
         public List<Fish> fishes { get; set; }
     }
