@@ -42,8 +42,7 @@
               "RelativeToolTip": "Models\\Aquarium.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T12:44:52.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T12:44:52.17Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Models\\Fish.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T12:43:54.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T12:43:54.135Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "Introduction\\Controllers\\AquariumController.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAEBVwAcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T09:57:51.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T09:57:51.345Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "Introduction.Service\\AquariumService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAnwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T09:56:54.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T09:56:54.228Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "Introduction.Repository\\AquariumRepository.cs",
               "ToolTip": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\AquariumRepository.cs",
               "RelativeToolTip": "Introduction.Repository\\AquariumRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwG0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T09:47:14.229Z",
               "EditorCaption": ""

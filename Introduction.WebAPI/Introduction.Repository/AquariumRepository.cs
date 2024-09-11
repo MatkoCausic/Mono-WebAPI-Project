@@ -106,11 +106,10 @@ namespace Introduction.Repository
                 using var command = new NpgsqlCommand(commandText, connection);
 
                 command.Parameters.AddWithValue("@id", NpgsqlTypes.NpgsqlDbType.Uuid, Guid.NewGuid());
-                command.Parameters.AddWithValue("@name", aquarium.OwnerName);
+                command.Parameters.AddWithValue("@ownername", aquarium.OwnerName);
                 command.Parameters.AddWithValue("@shape", aquarium.Shape);
                 command.Parameters.AddWithValue("@isHandmade", aquarium.IsHandmade);
                 command.Parameters.AddWithValue("@volume", aquarium.Volume);
-                aquarium.Fishes = new List<Fish>();
 
                 connection.Open();
                 int numberOfCommits = await command.ExecuteNonQueryAsync();
