@@ -56,7 +56,7 @@
           "dependencies": {
             "Npgsql": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -134,7 +134,7 @@
           "dependencies": {
             "Npgsql": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -281,12 +281,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Npgsql": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -352,12 +346,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Npgsql": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
