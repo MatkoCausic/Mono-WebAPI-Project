@@ -7,6 +7,11 @@
         public string? Shape { get; set; }
         public bool IsHandmade { get; set; }
         public double? Volume { get; set; }
-        public List<Fish> fishes { get; set; }
+        public List<Fish> Fishes { get; set; }
+
+        public Aquarium()
+        {
+            Fishes = new List<Fish>();
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Introduction.Repository
                         Shape = reader[2].ToString(),
                         IsHandmade = Convert.ToBoolean(reader[3]),
                         Volume = Convert.ToDouble(reader[4]),
-                        fishes = new List<Fish>()
+                        Fishes = new List<Fish>()
                     };
 
                     aquariums.Add(aquarium);
@@ -48,28 +48,54 @@ namespace Introduction.Repository
                 throw new Exception(ex.Message);
             }
         }
+        
         public async Task<Aquarium> GetAquariumAsync(Guid id)
         {
             try
             {
-                Aquarium aquarium = new Aquarium();
+                Aquarium aquarium = new();
                 using var connection = new NpgsqlConnection(connectionString);
-                var commandText = "SELECT * FROM \"Aquarium\" WHERE \"Id\" = @id;";
-                using var command = new NpgsqlCommand(commandText, connection);
+                var commandTextFishes = "SELECT \"Fish\".\"Id\", \"Name\",\"Color\",\"IsAggressive\",\"AquariumId\"" +
+                                    "FROM \"Fish\"" +
+                                    "RIGHT JOIN \"Aquarium\"" +
+                                    "ON \"Fish\".\"AquariumId\" = @id;";
+                using var commandFishes = new NpgsqlCommand(commandTextFishes, connection);
 
-                command.Parameters.AddWithValue("@id", id);
-                using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
+                commandFishes.Parameters.AddWithValue("@id", id);
 
-                if (reader.HasRows)
+                connection.Open();
+                using NpgsqlDataReader readerFishes = await commandFishes.ExecuteReaderAsync();
+                while (readerFishes.Read())
                 {
-                    reader.Read();
+                    Fish fish = new()
+                    {
+                        Id = Guid.Parse(readerFishes[0].ToString()),
+                        Name = readerFishes[1].ToString(),
+                        Color = readerFishes[2].ToString(),
+                        IsAggressive = Convert.ToBoolean(readerFishes[3]),
+                        AquariumId = Guid.TryParse(readerFishes[4].ToString(), out var result) ? result : null
+                    };
+                    aquarium.Fishes.Add(fish);
+                }
+                
+                connection.Close();
 
-                    aquarium.Id = Guid.Parse(reader[0].ToString());
-                    aquarium.OwnerName = reader[1].ToString();
-                    aquarium.Shape = reader[2].ToString();
-                    aquarium.IsHandmade = Convert.ToBoolean(reader[3]);
-                    aquarium.Volume = Convert.ToDouble(reader[4]);
-                    aquarium.fishes = new List<Fish>();
+                var commandTextAquarium = "SELECT * FROM \"Aquarium\" WHERE \"Id\" = @id;";
+                using var commandAquarium = new NpgsqlCommand(commandTextAquarium, connection);
+
+                commandAquarium.Parameters.AddWithValue("@id", id);
+
+                connection.Open();
+                using NpgsqlDataReader readerAquarium = await commandAquarium.ExecuteReaderAsync();
+                if (readerAquarium.HasRows)
+                {
+                    readerAquarium.Read();
+
+                    aquarium.Id = Guid.Parse(readerAquarium[0].ToString());
+                    aquarium.OwnerName = readerAquarium[1].ToString();
+                    aquarium.Shape = readerAquarium[2].ToString();
+                    aquarium.IsHandmade = Convert.ToBoolean(readerAquarium[3]);
+                    aquarium.Volume = Convert.ToDouble(readerAquarium[4]);
                 }
                 connection.Close();
                 return aquarium;
@@ -92,7 +118,7 @@ namespace Introduction.Repository
                 command.Parameters.AddWithValue("@shape", aquarium.Shape);
                 command.Parameters.AddWithValue("@isHandmade", aquarium.IsHandmade);
                 command.Parameters.AddWithValue("@volume", aquarium.Volume);
-                aquarium.fishes = new List<Fish>();
+                aquarium.Fishes = new List<Fish>();
 
                 connection.Open();
                 int numberOfCommits = await command.ExecuteNonQueryAsync();
