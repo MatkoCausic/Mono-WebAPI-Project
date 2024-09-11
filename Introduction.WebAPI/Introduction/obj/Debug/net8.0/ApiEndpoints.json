@@ -1,12 +1,86 @@
 [
   {
     "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "PostAquariumAsync",
+    "RelativePath": "aquariums/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aquarium",
+        "Type": "Introduction.Aquarium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "ChangeOwner",
+    "RelativePath": "aquariums/changeOwner/{id}/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "newOwner",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "GetAquariumAsync",
+    "RelativePath": "aquariums/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
     "Method": "GetAllAquariumsAsync",
     "RelativePath": "aquariums/get/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.WebAPI.Controllers.AquariumController",
+    "Method": "DeleteAquariumAsync",
+    "RelativePath": "aquariums/remove/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

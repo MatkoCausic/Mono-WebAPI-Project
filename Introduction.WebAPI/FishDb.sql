@@ -22,6 +22,10 @@ CONSTRAINT "FK_Fish_Aquarium_AquariumId"
 INSERT INTO "Aquarium" ("OwnerName","Shape","IsHandmade","Volume")
 VALUES
 	('Matko','Block',true,10);
+	
+INSERT INTO "Aquarium" ("OwnerName","Shape","IsHandmade","Volume")
+VALUES
+	('Klara','Bowl',false,90.5);
 SELECT * FROM "Aquarium";
 
 INSERT INTO "Fish" ("Name","Color","IsAggressive","AquariumId")
@@ -46,3 +50,18 @@ SELECT * FROM "Fish" WHERE "Name" = 'Raphael';
 
 DELETE FROM "Fish"
 WHERE "Name" = 'Test' OR "Name" = 'Bruno';
+
+SELECT a."Id" as "AquariumId","OwnerName","Shape","IsHandmade","Volume",f."Id" as "FishId","Name","Color","IsAggressive","AquariumId"
+FROM "Aquarium" a
+LEFT JOIN "Fish" f
+ON a."Id" = '';
+
+SELECT a."Id" as "AquariumId","OwnerName","Shape","IsHandmade","Volume",
+                    f."Id" as "FishId","Name","Color","IsAggressive","AquariumId"
+                    FROM "Aquarium" a
+                    LEFT JOIN "Fish" f
+					ON a."Id" = f."AquariumId"
+                    WHERE a."Id" = '6b1502e7-fc2e-4a1c-89b6-0c37f79f0021';
+
+SELECT * FROM "Aquarium" WHERE "Id" = '6b1502e7-fc2e-4a1c-89b6-0c37f79f0021';
+SELECT * FROM "Aquarium" WHERE "Id" = 'fd39f1c1-ae2c-4a05-a0aa-4a044263780b';
