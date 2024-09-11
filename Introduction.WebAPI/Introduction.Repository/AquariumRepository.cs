@@ -55,49 +55,41 @@ namespace Introduction.Repository
             {
                 Aquarium aquarium = new();
                 using var connection = new NpgsqlConnection(connectionString);
-                var commandTextFishes = "SELECT \"Fish\".\"Id\", \"Name\",\"Color\",\"IsAggressive\",\"AquariumId\"" +
-                                    "FROM \"Fish\"" +
-                                    "RIGHT JOIN \"Aquarium\"" +
-                                    "ON \"Fish\".\"AquariumId\" = @id;";
-                using var commandFishes = new NpgsqlCommand(commandTextFishes, connection);
+                var commandText = "SELECT a.\"Id\" as \"AquariumId\",\"OwnerName\",\"Shape\",\"IsHandmade\",\"Volume\"," +
+                    "f.\"Id\" as \"FishId\",\"Name\",\"Color\",\"IsAggressive\",\"AquariumId\"" +
+                    "FROM \"Aquarium\" a LEFT JOIN \"Fish\" f ON a.\"Id\" = f.\"AquariumId\"" +
+                    "WHERE a.\"Id\" = @id;";
+                using var command = new NpgsqlCommand(commandText, connection);
 
-                commandFishes.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@id", id);
 
                 connection.Open();
-                using NpgsqlDataReader readerFishes = await commandFishes.ExecuteReaderAsync();
-                while (readerFishes.Read())
+                using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
+
+                if (reader.HasRows)
                 {
-                    Fish fish = new()
+                    while(await reader.ReadAsync())
                     {
-                        Id = Guid.Parse(readerFishes[0].ToString()),
-                        Name = readerFishes[1].ToString(),
-                        Color = readerFishes[2].ToString(),
-                        IsAggressive = Convert.ToBoolean(readerFishes[3]),
-                        AquariumId = Guid.TryParse(readerFishes[4].ToString(), out var result) ? result : null
-                    };
-                    aquarium.Fishes.Add(fish);
+                        Fish fish = new();
+
+                        aquarium.Id = Guid.Parse(reader["AquariumId"].ToString());
+                        aquarium.OwnerName = reader["OwnerName"].ToString();
+                        aquarium.Shape = reader["Shape"].ToString();
+                        aquarium.IsHandmade = Convert.ToBoolean(reader["IsHandmade"]);
+                        aquarium.Volume = Convert.ToDouble(reader["Volume"]);
+
+                        if (reader["FishId"] != DBNull.Value)
+                        {
+                            fish.Id = Guid.TryParse(reader["FishId"].ToString(), out var result) ? result : Guid.Empty;
+                            fish.Name = reader["Name"].ToString();
+                            fish.Color = reader["Color"].ToString();
+                            fish.IsAggressive = Convert.ToBoolean(reader["IsAggressive"]);
+                            fish.AquariumId = Guid.Parse(reader["AquariumId"].ToString());
+                            aquarium.Fishes.Add(fish);
+                        }
+                    }
                 }
-                
-                connection.Close();
 
-                var commandTextAquarium = "SELECT * FROM \"Aquarium\" WHERE \"Id\" = @id;";
-                using var commandAquarium = new NpgsqlCommand(commandTextAquarium, connection);
-
-                commandAquarium.Parameters.AddWithValue("@id", id);
-
-                connection.Open();
-                using NpgsqlDataReader readerAquarium = await commandAquarium.ExecuteReaderAsync();
-                if (readerAquarium.HasRows)
-                {
-                    readerAquarium.Read();
-
-                    aquarium.Id = Guid.Parse(readerAquarium[0].ToString());
-                    aquarium.OwnerName = readerAquarium[1].ToString();
-                    aquarium.Shape = readerAquarium[2].ToString();
-                    aquarium.IsHandmade = Convert.ToBoolean(readerAquarium[3]);
-                    aquarium.Volume = Convert.ToDouble(readerAquarium[4]);
-                }
-                connection.Close();
                 return aquarium;
             }
             catch(Exception ex)
