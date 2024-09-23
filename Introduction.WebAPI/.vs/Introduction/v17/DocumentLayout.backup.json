@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31154617-2E66-45CF-AACB-B66830C4CAEA}|Introduction.Repository\\Introduction.Repository.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\introduction.repository\\aquariumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31154617-2E66-45CF-AACB-B66830C4CAEA}|Introduction.Repository\\Introduction.Repository.csproj|solutionrelative:introduction.repository\\aquariumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16D1B8D0-8979-4C35-B699-739D610CACAE}|Introduction.Service\\Introduction.Service.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\introduction.service\\aquariumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16D1B8D0-8979-4C35-B699-739D610CACAE}|Introduction.Service\\Introduction.Service.csproj|solutionrelative:introduction.service\\aquariumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10C274F7-D47C-48E1-BB2B-ED00EFA232E2}|Models\\Models.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\models\\fish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10C274F7-D47C-48E1-BB2B-ED00EFA232E2}|Models\\Models.csproj|solutionrelative:models\\fish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{10C274F7-D47C-48E1-BB2B-ED00EFA232E2}|Models\\Models.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\models\\aquarium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10C274F7-D47C-48E1-BB2B-ED00EFA232E2}|Models\\Models.csproj|solutionrelative:models\\aquarium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{31154617-2E66-45CF-AACB-B66830C4CAEA}|Introduction.Repository\\Introduction.Repository.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\introduction.repository\\aquariumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31154617-2E66-45CF-AACB-B66830C4CAEA}|Introduction.Repository\\Introduction.Repository.csproj|solutionrelative:introduction.repository\\aquariumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9DD3CFF-BCDB-48F0-88EC-936D8F55CDFB}|Introduction\\Introduction.WebAPI.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\introduction\\controllers\\aquariumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9DD3CFF-BCDB-48F0-88EC-936D8F55CDFB}|Introduction\\Introduction.WebAPI.csproj|solutionrelative:introduction\\controllers\\aquariumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16D1B8D0-8979-4C35-B699-739D610CACAE}|Introduction.Service\\Introduction.Service.csproj|c:\\users\\gabri\\desktop\\mono webapi project\\introduction.webapi\\introduction.service\\aquariumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16D1B8D0-8979-4C35-B699-739D610CACAE}|Introduction.Service\\Introduction.Service.csproj|solutionrelative:introduction.service\\aquariumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 198,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Aquarium.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Aquarium.cs",
               "RelativeDocumentMoniker": "Models\\Aquarium.cs",
@@ -48,31 +44,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Fish.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Fish.cs",
-              "RelativeDocumentMoniker": "Models\\Fish.cs",
-              "ToolTip": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Fish.cs",
-              "RelativeToolTip": "Models\\Fish.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T12:43:54.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AquariumController.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction\\Controllers\\AquariumController.cs",
               "RelativeDocumentMoniker": "Introduction\\Controllers\\AquariumController.cs",
               "ToolTip": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction\\Controllers\\AquariumController.cs",
               "RelativeToolTip": "Introduction\\Controllers\\AquariumController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wDcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T09:57:51.345Z"
+              "WhenOpened": "2024-09-10T09:57:51.345Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AquariumService.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\AquariumService.cs",
               "RelativeDocumentMoniker": "Introduction.Service\\AquariumService.cs",
@@ -85,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AquariumRepository.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\AquariumRepository.cs",
               "RelativeDocumentMoniker": "Introduction.Repository\\AquariumRepository.cs",
               "ToolTip": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\AquariumRepository.cs",
               "RelativeToolTip": "Introduction.Repository\\AquariumRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAADoAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGMAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-10T09:47:14.229Z",
               "EditorCaption": ""

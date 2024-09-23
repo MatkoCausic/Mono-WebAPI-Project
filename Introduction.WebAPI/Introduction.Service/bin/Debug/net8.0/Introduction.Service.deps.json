@@ -10,8 +10,7 @@
         "dependencies": {
           "Introduction.Repository": "1.0.0",
           "Introduction.Service.Common": "1.0.0",
-          "Models": "1.0.0",
-          "Npgsql": "8.0.3"
+          "Models": "1.0.0"
         },
         "runtime": {
           "Introduction.Service.dll": {}
@@ -36,14 +35,14 @@
           }
         }
       },
-      "Npgsql/8.0.3": {
+      "Npgsql/8.0.4": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Npgsql.dll": {
-            "assemblyVersion": "8.0.3.0",
-            "fileVersion": "8.0.3.0"
+            "assemblyVersion": "8.0.4.0",
+            "fileVersion": "8.0.4.0"
           }
         }
       },
@@ -51,7 +50,7 @@
         "dependencies": {
           "Introduction.Repository.Common": "1.0.0",
           "Models": "1.0.0",
-          "Npgsql": "8.0.3"
+          "Npgsql": "8.0.4"
         },
         "runtime": {
           "Introduction.Repository.dll": {
@@ -63,7 +62,7 @@
       "Introduction.Repository.Common/1.0.0": {
         "dependencies": {
           "Models": "1.0.0",
-          "Npgsql": "8.0.3"
+          "Npgsql": "8.0.4"
         },
         "runtime": {
           "Introduction.Repository.Common.dll": {
@@ -84,9 +83,6 @@
         }
       },
       "Models/1.0.0": {
-        "dependencies": {
-          "Npgsql": "8.0.3"
-        },
         "runtime": {
           "Models.dll": {
             "assemblyVersion": "1.0.0",
@@ -116,12 +112,12 @@
       "path": "microsoft.extensions.logging.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
     },
-    "Npgsql/8.0.3": {
+    "Npgsql/8.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6WEmzsQJCZAlUG1pThKg/RmeF6V+I0DmBBBE/8YzpRtEzhyZzKcK7ulMANDm5CkxrALBEC8H+5plxHWtIL7xnA==",
-      "path": "npgsql/8.0.3",
-      "hashPath": "npgsql.8.0.3.nupkg.sha512"
+      "sha512": "sha512-vaYEUlF/pB9m8bs21wQv3Da0kMHT4A9USe47VfY/L2BO97xz5KfIxhEu22QS9d68ZrLxvtL3wQDfDLPr2OjbjA==",
+      "path": "npgsql/8.0.4",
+      "hashPath": "npgsql.8.0.4.nupkg.sha512"
     },
     "Introduction.Repository/1.0.0": {
       "type": "project",
