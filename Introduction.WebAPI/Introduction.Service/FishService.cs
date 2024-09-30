@@ -1,4 +1,5 @@
 ﻿using Introduction.Repository;
+using Introduction.Repository.Common;
 using Introduction.Service.Common;
 using Npgsql;
 using System;
@@ -11,6 +12,9 @@ namespace Introduction.Service
 {
     public class FishService : IFishService
     {
+        private IFishRepository repository = new FishRepository();
+
+
         public async Task<List<Fish>> GetAllFishesAsync()
         {
             FishRepository repository = new();
@@ -41,6 +45,11 @@ namespace Introduction.Service
         {
             FishRepository repository = new();
             return await repository.GetFishAsync(id);
+        }
+        public async Task<bool> UpdateFishAsync(Guid id,Fish fish)
+        {
+            var currentFish = await repository.GetFishAsync(id);
+            return (currentFish == null) ? false : await this.repository.UpdateFishAsync(id, fish);
         }
     }
 }

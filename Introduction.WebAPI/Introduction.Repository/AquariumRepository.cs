@@ -11,7 +11,7 @@ namespace Introduction.Repository
 {
     public class AquariumRepository
     {
-        private static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=00000";
+        private static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=postgres";
 
         public async Task<List<Aquarium>> GetAllAquariumsAsync()
         {

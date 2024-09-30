@@ -1,5 +1,7 @@
 ﻿using Introduction.Service;
+using Introduction.Service.Common;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 using Npgsql;
 using NpgsqlTypes;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +13,23 @@ namespace Introduction.Controllers
     [Route("fishes")]
     public class FishController : Controller
     {
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateFishAsync(Guid id, [FromBody]FishUpdate fishUpdate)
+        {
+            FishService service = new();
+            Fish fish = new();
+
+            fish.Name = fishUpdate.Name;
+            fish.Color = fishUpdate.Color;
+            fish.IsAggressive = fishUpdate.IsAggressive;
+            fish.AquariumId = fishUpdate.AquariumId;
+
+            bool isSuccessful = await service.UpdateFishAsync(id, fish);
+            return (!isSuccessful) ? BadRequest("Unable to update fish.") : Ok("Fish updated!");
+        }
+
         [HttpDelete]
         [Route("remove/{id}")]
         public async Task<IActionResult> DeleteFishAsync(Guid id)

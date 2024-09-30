@@ -14,5 +14,6 @@ namespace Introduction.Repository.Common
         Task<bool> DeleteFishAsync(Guid id);
         Task<Fish> GetFishAsync(Guid id);
         Task<bool> DomesticateFishAsync(string name);
+        Task<bool> UpdateFishAsync(Guid id, Fish fish);
     }
 }

@@ -14,3 +14,19 @@ C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Repo
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\refint\Introduction.Repository.Common.dll
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.pdb
 C:\Users\gabri\Desktop\Mono WebAPI Project\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\ref\Introduction.Repository.Common.dll
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\bin\Debug\net8.0\Introduction.Repository.Common.deps.json
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\bin\Debug\net8.0\Introduction.Repository.Common.dll
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\bin\Debug\net8.0\Introduction.Repository.Common.pdb
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\bin\Debug\net8.0\Models.dll
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\bin\Debug\net8.0\Models.pdb
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.csproj.AssemblyReference.cache
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.AssemblyInfo.cs
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.sourcelink.json
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduc.A06B026E.Up2Date
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.dll
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\refint\Introduction.Repository.Common.dll
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\Introduction.Repository.Common.pdb
+C:\Users\gabri\Desktop\MonoWebAPIProject\Introduction.WebAPI\Introduction.Repository.Common\obj\Debug\net8.0\ref\Introduction.Repository.Common.dll

@@ -85,6 +85,27 @@
   },
   {
     "ContainingType": "Introduction.Controllers.FishController",
+    "Method": "UpdateFishAsync",
+    "RelativePath": "fishes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "fishUpdate",
+        "Type": "Models.FishUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Introduction.Controllers.FishController",
     "Method": "PostFishAsync",
     "RelativePath": "fishes/add",
     "HttpMethod": "POST",

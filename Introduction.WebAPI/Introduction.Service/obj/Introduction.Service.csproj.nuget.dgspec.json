@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj": {}
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj": {
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj",
         "projectName": "Introduction.Repository.Common",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj": {
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj",
         "projectName": "Introduction.Repository",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,11 +108,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository.Common\\Introduction.Repository.Common.csproj"
               },
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -157,14 +157,14 @@
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj": {
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
         "projectName": "Introduction.Service.Common",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -186,8 +186,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj": {
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj",
         "projectName": "Introduction.Service",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service\\Introduction.Service.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -255,14 +255,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Repository\\Introduction.Repository.csproj"
               },
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj"
               },
-              "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj"
+              "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj"
               }
             }
           }
@@ -301,14 +301,14 @@
         }
       }
     },
-    "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj": {
+    "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Models\\obj\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

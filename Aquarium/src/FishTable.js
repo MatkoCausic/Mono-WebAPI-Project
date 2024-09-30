@@ -17,7 +17,7 @@ function FishTable({fishes, updateFish, deleteFish}){
           </thead>
           <tbody>
             {fishes && fishes.map(fish => (
-            <tr>
+            <tr key={fish.id} >
               <td>{fish.id}</td>
               <td>{fish.name}</td>
               <td>{fish.color}</td>

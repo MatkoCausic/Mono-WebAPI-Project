@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zv51V4ShC2M=",
+  "dgSpecHash": "gjiRz0bDmnA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\Desktop\\Mono WebAPI Project\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\Desktop\\MonoWebAPIProject\\Introduction.WebAPI\\Introduction.Service.Common\\Introduction.Service.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

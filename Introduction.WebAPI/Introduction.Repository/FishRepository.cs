@@ -7,7 +7,7 @@ namespace Introduction.Repository
 {
     public class FishRepository : IFishRepository
     {
-        private static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=00000";
+        private static string connectionString = "Host=localhost;Port=5432;Database=Aquarium;Username=postgres;Password=postgres";
 
         public async Task<Fish> GetFishAsync(Guid id)
         {
@@ -144,6 +144,53 @@ namespace Introduction.Repository
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<bool> UpdateFishAsync(Guid id,Fish fish)
+        {
+            try
+            {
+                using var connection = new NpgsqlConnection(connectionString);
+                var commandText = "UPDATE \"Fish\" SET ";
+                using var command = new NpgsqlCommand(commandText, connection);
+
+                if(fish.Name != null)
+                {
+                    commandText += "\"Name\" = @name, ";
+                    command.Parameters.AddWithValue("@name", fish.Name);
+                }
+                if(fish.Color != null)
+                {
+                    commandText += "\"Color\" = @color, ";
+                    command.Parameters.AddWithValue("@color", fish.Color);
+                }
+                if(fish.IsAggressive != null)
+                {
+                    commandText += "\"IsAggressive\" = @isAggressive, ";
+                    command.Parameters.AddWithValue("@isAggressive", fish.IsAggressive);
+                }
+                if (fish.AquariumId.HasValue)
+                {
+                    commandText += "\"AquariumId\" = @aquariumId, ";
+                    command.Parameters.AddWithValue("@aquariumId", fish.AquariumId);
+                }
+
+                commandText = commandText.Remove(commandText.Length - 2);
+                commandText += " WHERE \"Id\" = @id;";
+                command.Parameters.AddWithValue("@id", id);
+                command.CommandText = commandText;
+
+                connection.Open();
+                var numberOfCommits = await command.ExecuteNonQueryAsync();
+                connection.Close();
+
+                return (numberOfCommits == 0) ? false : true;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public async Task<bool> DomesticateFishAsync(string name)
         {
             try
